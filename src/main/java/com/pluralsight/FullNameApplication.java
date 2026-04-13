@@ -12,11 +12,23 @@ public class FullNameApplication {
 
         System.out.println(fullName);
 
-        String [] names = fullName.split("");
+        String [] names = fullName.split(" ");
 
         String firstName = names[0];
         String middleName;
         String lastName;
+
+        if(names.length == 3){
+            middleName = names[1];
+            lastName = names[2];
+        } else {
+            middleName = "(none)";
+            lastName = names[1];
+
+            System.out.println();
+            System.out.println();
+            System.out.println();
+        }
 
 
 
