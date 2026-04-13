@@ -10,7 +10,7 @@ public class FullNameApplication {
         System.out.print("Full Name: ");
         String fullName = input.nextLine().trim();
 
-        System.out.println(fullName);
+        System.out.println(fullName.trim());
 
         String [] names = fullName.split(" ");
 
@@ -25,9 +25,9 @@ public class FullNameApplication {
             middleName = "(none)";
             lastName = names[1];
 
-            System.out.println();
-            System.out.println();
-            System.out.println();
+            System.out.println("First name: " + firstName);
+            System.out.println("Middle name: " + middleName);
+            System.out.println("Last name: " + lastName);
         }
 
 
